@@ -232,7 +232,6 @@ static void adc_continuous_event_handler(void* arg, cyhal_adc_event_t event)
         {
         	adc_data[i] = (int32_t)(cyhal_adc_read_uv(&adc_channels[i])/1000);
         }
-        cyhal_gpio_toggle(USER_LED_RED);
     }
 }
 
