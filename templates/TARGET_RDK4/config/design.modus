@@ -257,6 +257,16 @@
                 <Block location="msc[1].msc[0]">
                     <Alias value="CYBSP_MSC1"/>
                 </Block>
+                <Block location="peri[0].div_16[0]">
+                    <Alias value="ADC_CLK"/>
+                    <Personality template="m0s8peripheralclock" version="1.0">
+                        <Param id="calc" value="man"/>
+                        <Param id="desFreq" value="48000000.000000"/>
+                        <Param id="intDivider" value="48"/>
+                        <Param id="fracDivider" value="0"/>
+                        <Param id="startOnReset" value="true"/>
+                    </Personality>
+                </Block>
                 <Block location="scb[0]">
                     <Alias value="KITPROG_UART"/>
                 </Block>
