@@ -8,7 +8,7 @@ This example demonstrates how to use the HAL library to measure all the ADC chan
 
 ## Requirements
 
-- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v3.1
+- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v2025.4.0
 - The latest hardware release [RDK4 Rev2](https://github.com/RutronikSystemSolutions/RDK4_Hardware_Files).
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
