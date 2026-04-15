@@ -8,12 +8,12 @@ This example demonstrates how to use the HAL library to measure all the ADC chan
 
 ## Requirements
 
-- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v2025.4.0
+- [ModusToolbox™ software](https://www.cypress.com/products/modustoolbox-software-environment) v3.7
 - The latest hardware release [RDK4 Rev2](https://github.com/RutronikSystemSolutions/RDK4_Hardware_Files).
 
 ## Supported toolchains (make variable 'TOOLCHAIN')
 
-- GNU Arm&reg; Embedded Compiler v11.3.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
+- GNU Arm&reg; Embedded Compiler v14.2.1 (`GCC_ARM`) - Default value of `TOOLCHAIN`
 
 ## Using the code example
 
@@ -54,7 +54,7 @@ The firmware example uses KitProg3 Debug UART for the debug output. The ADC peri
 static void adc_continuous_event_handler(void* arg, cyhal_adc_event_t event)
 ```
 
-The ADC initialization is done in a function:
+The ADC initialisation is done in a function:
 
 ```
 cy_rslt_t app_hw_init(void)
@@ -66,13 +66,13 @@ The data is read from the data array and printed to the terminal every second:
 
 ### Debugging
 
-If you successfully have imported the example, the debug configurations are already prepared to use with a the KitProg3, MiniProg4, or J-link. Open the ModusToolbox™ perspective and find the Quick Panel. Click on the desired debug launch configuration and wait for the programming to complete and the debugging process to start.
+If you have successfully imported the example, the debug configurations are already prepared to use with the KitProg3 and MiniProg4. Open the ModusToolbox™ perspective and find the Quick Panel. Click the desired debug launch configuration, then wait for programming to complete and debugging to start.
 
 <img src="images/debug_start.png" style="zoom:100%;" />
 
 #### SBC Development Mode
 
-A special mode, called SBC Development Mode, is available during software development or debugging of the system. The watchdog counter is stopped and does not need to be triggered. This mode can be accessed by setting the TEST [**FO3**] pin to GND during SBC Init Mode.
+A special mode, called SBC Development Mode, is available for software development or system debugging. The watchdog counter is stopped and does not need to be triggered. This mode can be accessed by setting the TEST [**FO3**] pin to GND during SBC Init Mode.
 
 ## Legal Disclaimer
 
